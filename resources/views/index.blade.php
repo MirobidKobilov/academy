@@ -1,0 +1,10 @@
+@extends('layouts.master')
+    @section('content')
+        @include('partials.navbar')
+        @include('partials.hero')
+        @include('partials.about')
+        @include('partials.courses')
+        @include('partials.price')
+        @include('partials.mentors')
+        @include('partials.vacancies')
+    @endsection

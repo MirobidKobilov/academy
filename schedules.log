@@ -1,0 +1,21 @@
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'field list' (SQL: insert into `zoom_times` (`user_id`, `mentor`, `free_to_zoom`, `updated_at`, `created_at`) values (1, asadbe, 2022-07-22 09:00:00, 2022-07-22 18:52:01, 2022-07-22 18:52:01))
+
+  at D:\OpenServer\domains\academyv2\vendor\laravel\framework\src\Illuminate\Database\Connection.php:759
+    755▕         // If an exception occurs when attempting to run a query, we'll format the error
+    756▕         // message to include the bindings with SQL, which will make this exception a
+    757▕         // lot more helpful to the developer instead of just the database's errors.
+    758▕         catch (Exception $e) {
+  ➜ 759▕             throw new QueryException(
+    760▕                 $query, $this->prepareBindings($bindings), $e
+    761▕             );
+    762▕         }
+    763▕     }
+
+  1   D:\OpenServer\domains\academyv2\vendor\laravel\framework\src\Illuminate\Database\Connection.php:538
+      PDOException::("SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'field list'")
+
+  2   D:\OpenServer\domains\academyv2\vendor\laravel\framework\src\Illuminate\Database\Connection.php:538
+      PDO::prepare()
